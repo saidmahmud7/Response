@@ -30,6 +30,7 @@ public class CarService(DapperContext _context) : ICarService
                      where carid = @CarId";
         var res = context.Execute(sql, car);
         return res > 0;
+        
     }
 
     public bool DeleteCar(int id)
